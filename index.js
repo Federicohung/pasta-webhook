@@ -110,7 +110,7 @@ var server = http.createServer(function(req, res) {
     return;
   }
 
-  if ([req.me](https://req.me)thod === 'POST') {
+  `if (req.method == "GET") {`
     var body = '';
     req.on('data', function(chunk) { body += chunk; });
     req.on('end', function() {
