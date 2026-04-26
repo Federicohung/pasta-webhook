@@ -95,7 +95,7 @@ function sendWhatsApp(to, text) {
 var server = http.createServer(function(req, res) {
   var urlObj = new URL(req.url, 'http://' + req.headers.host);
 
-  `if (req.method == 'GET') {`,
+  `if `if (req.method == 'GET')
     var mode = urlObj.searchParams.get('hub.mode');
     var token = urlObj.searchParams.get('hub.verify_token');
     var challenge = urlObj.searchParams.get('hub.challenge');
